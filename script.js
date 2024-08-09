@@ -24,6 +24,7 @@ xhrFooter.send();
 
 // --------------END SCRIPT FOR FOOTER SECTION ----------------------------//
        
+
 /* ---------------------------INTERSECTION OBSERVER-----------  */
 var about= document.querySelectorAll(".about1");
 
@@ -48,89 +49,60 @@ about.forEach(text =>{
 
 
 
-// window.onload=function(){
-// document.getElementById("abc").style.display="block";
-// document.getElementById("loader").style.display="none";;
-
-// }
+//   --------------------------mouse move event for service section ------------------//
 
 
-//   --------------------------mouse move ------------------//
-
-var hoverArea=document.getElementById("hoverArea");
-var hoverImage=document.getElementById("hoverImage");
-
-hoverArea.addEventListener("mousemove", (e) => {
-  var rect = hoverArea.getBoundingClientRect();
-  var x = e.clientX - rect.left + 200;
-  var y = e.clientY - rect.top + 200;
-  console.log(x);
-  console.log(y);
-  hoverImage.style.left = `${x}px`;
-  hoverImage.style.top = `${y}px`;
-});
-
-hoverArea.addEventListener("mouseenter", () => {
-  hoverImage.style.opacity = "1";
-  hoverImage.style.transform = "scale(1)";
-});
-
-hoverArea.addEventListener("mouseleave", () => {
-  hoverImage.style.opacity = "0";
-  hoverImage.style.transform = "scale(0)";
-});
+if(window.outerWidth > 992) {
+  console.log(window.outerWidth);
 
 
+function setupHoverEffects(hoverAreaId, hoverImageId, offsetXPercent, offsetYPercent) {
+  var hoverArea = document.getElementById(hoverAreaId);
+  var hoverImage = document.getElementById(hoverImageId);
+
+  hoverArea.addEventListener("mousemove", (e) => {
+    var rect = hoverArea.getBoundingClientRect();
+    var x = e.clientX - rect.left;
+    var y = e.clientY - rect.top;
+
+    // Calculate the position as a percentage of the hover area size
+    var hoverAreaWidth = hoverArea.offsetWidth;
+    var hoverAreaHeight = hoverArea.offsetHeight;
+
+    var offsetX = (offsetXPercent / 100) * hoverAreaWidth;
+    var offsetY = (offsetYPercent / 100) * hoverAreaHeight;
+
+    hoverImage.style.left = `${x + offsetX}px`;
+    hoverImage.style.top = `${y + offsetY}px`;
+  });
+
+  hoverArea.addEventListener("mouseenter", () => {
+    hoverImage.style.opacity = "1";
+    hoverImage.style.transform = "scale(1)";
+  });
+
+  hoverArea.addEventListener("mouseleave", () => {
+    hoverImage.style.opacity = "0";
+    hoverImage.style.transform = "scale(0)";
+  });
+}
+
+
+setupHoverEffects("hoverArea", "hoverImage", 40, 80); // 20% offsets
+setupHoverEffects("hoverArea1", "hoverImage1", 150, 80);
+setupHoverEffects("hoverArea2", "hoverImage2", 260, 80);
+setupHoverEffects("hoverArea3", "hoverImage3", 40, 190);
+setupHoverEffects("hoverArea4", "hoverImage4", 150, 190);
+setupHoverEffects("hoverArea5", "hoverImage5", 260, 190);
+setupHoverEffects("hoverArea6", "hoverImage6", 95, 300);
+setupHoverEffects("hoverArea7", "hoverImage7", 205, 300);
+
+
+}
 
 
 
-var hoverArea1=document.getElementById("hoverArea1");
-var hoverImage1=document.getElementById("hoverImage1");
-
-hoverArea1.addEventListener("mousemove", (e) => {
-  var rect = hoverArea1.getBoundingClientRect();
-  var x = e.clientX - rect.left + 500;
-  var y = e.clientY - rect.top + 200;
-  console.log(x);
-  console.log(y);
-  hoverImage1.style.left = `${x}px`;
-  hoverImage1.style.top = `${y}px`;
-});
-
-hoverArea1.addEventListener("mouseenter", () => {
-  hoverImage1.style.opacity = "1";
-  hoverImage1.style.transform = "scale(1)";
-});
-
-hoverArea1.addEventListener("mouseleave", () => {
-  hoverImage1.style.opacity = "0";
-  hoverImage1.style.transform = "scale(0)";
-});
-
-var hoverArea2=document.getElementById("hoverArea2");
-var hoverImage2=document.getElementById("hoverImage2");
-
-hoverArea2.addEventListener("mousemove", (e) => {
-  var rect = hoverArea2.getBoundingClientRect();
-  var x = e.clientX - rect.left + 800;
-  var y = e.clientY - rect.top + 200;
-  console.log(x);
-  console.log(y);
-  hoverImage2.style.left = `${x}px`;
-  hoverImage2.style.top = `${y}px`;
-});
-
-hoverArea2.addEventListener("mouseenter", () => {
-  hoverImage2.style.opacity = "1";
-  hoverImage2.style.transform = "scale(1)";
-});
-
-hoverArea2.addEventListener("mouseleave", () => {
-  hoverImage2.style.opacity = "0";
-  hoverImage2.style.transform = "scale(0)";
-});
-
-// video playbutton //
+// --------------------video playbutton------------------------ //
 var videobtn=document.getElementById("videobtn")
 videobtn.addEventListener("click" , ()=>{
     var video=document.getElementById("video");
@@ -138,10 +110,61 @@ videobtn.addEventListener("click" , ()=>{
           videobtn.style.display="none";
 
 })
-var video=document.getElementById("video")
+var video=document.getElementById("video");
 video.addEventListener("click", ()=>{
   var video=document.getElementById("video");
   video.pause();
   videobtn.style.display="block";
 
 });
+
+// --------------------------- offcanvas---------------------------//
+
+function bar(){
+  const offcanvassId=document.getElementById("offcanvass-Id");
+
+  offcanvassId.style.display="block";
+ 
+}
+function closea(){
+  const offcanvassId=document.getElementById("offcanvass-Id");
+
+  offcanvassId.style.display="none";
+}
+
+
+function mobilebar(){
+  const offcanvassId=document.getElementById("offcanvassMobile");
+
+  offcanvassId.style.display="block";
+}
+
+function mobilebarClose(){
+  const offcanvassId=document.getElementById("offcanvassMobile");
+
+  offcanvassId.style.display="none";
+}
+
+
+
+
+
+// ----------------scroll button here------------//
+
+var scroll=document.querySelector(".scroll");
+window.addEventListener("scroll", ()=>{
+
+if(window.pageYOffset > 300){
+scroll.style.opacity="1";
+}else{
+  scroll.style.opacity="0";
+
+}
+  
+})
+scroll.addEventListener("click", ()=>{
+window.scrollTo({
+  top:0,
+  behaviour:"smooth"
+})
+})
