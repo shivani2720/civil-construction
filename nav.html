@@ -1,35 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAI CONSTRUCTION LTD.</title>
-
-
-</head>
-
-<body>
 
     <!----------------------------START NAVIGATION BAR  ------------------------------------------->
 
     <div class="container-fluid navs">
         <div class=" col-xl-1 col-md-1  nav-left  ">
             <!-- ----offcanvas ---------- -->
-            <img class="bar" src="images/menu-bar.png" alt="bar-icon" height="30px" width="30px"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                aria-controls="offcanvasWithBothOptions">
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-                aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <p>Try scrolling the rest of the page to see this option in action.</p>
-                </div>
-            </div>
+             
+            <img class="bar" id="bar" onclick="bar()" src="images/menu-bar.png" alt="bar-icon" height="35px">
+
+            
             <!-- end offcanvas --------------- -->
+            
         </div>
 
         <div class="  col-xl-1 col-md-1 col-sm-2 col-3 logo ">
@@ -47,32 +28,9 @@
            
             <!-- start offcanvas for  mobile  -->
            
-                <img class="menu-bar" src="images/menu-bar.png" alt="bar-icon" height="15px" width="15px"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight">
-
-            <div class="offcanvas container-fluid  offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class=" conatiner offcanvas-header ">
-                    <h5 id="offcanvasRightLabel">SAI CONSTRUCTION</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class=" conatiner offcanvas-body ">
-                    <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">SERVICES</a></li>
-                        <li><a href="">GALLERY</a></li>
-                        <li><a href="">ENQUIRY</a></li>
-                    </ul>
-                </div>
-
-                <div class=" container bg-scondary offcanvas-footer">
-                    <hr>
-                    dhasghgsh
-                </div>
-            </div>
+            
             <!--end  offcanvas for  mobile  -->
+            <img class="mobile-bar" onclick="mobilebar()"  src="images/menu-bar.png" alt="bar-icon" height="35px" >
 
 
         </div>
@@ -86,6 +44,98 @@
     </div>
 
 
-</body>
+    
+  <!-- --------offcanvas------------- -->
+    <div class="offcanvass" id="offcanvass-Id">
+        <div class="offcanvass-inner">
+             <div class=" offcanvass-header">
+            <img class="offcanvass-logo" src="images/saiii.png" alt="" height="
+            100px">
+            <img  onclick="closea()" src="images/close (1).png" alt="" height="
+     20px">
+     </div>
+<div class="offcanvass-body">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas beatae sequi natus, inventore cupiditate odit aliquid similique repudiandae nobis? Odio ipsum enim quis perferendis hic expedita asperiores nihil blanditiis!</p>
+    <hr>
+    <div class=" address" >
+                   
+                        
+        <div class="col-12" >
+         <img src="images/time.png" alt="" height="20px">
+         <h6>Say Hello!</h6>
+         <span>SAICONSTRUCTIONNZ@GMAIL.COM</span>
+         <span>+1 022 108 5176</span>
+         <span>+1 022 344 7437</span>
+     </div>
+     <div class="col-12 mt-3 " >
+         <img src="images/location.png" alt="" height="20px">
+         <h6>Location</h6>
+         <span>1/79E Rangatira Road, beach haven, Auckland-0626</span>
 
-</html>
+
+</div>
+
+
+
+
+</div>
+                                <div class="icon">
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                                </div>
+</div>
+
+</div>
+       
+                
+    </div>
+
+
+    <!-- ----------offcanvas for mobile bar------------- -->
+    <div class="offcanvassMobile" id="offcanvassMobile">
+        <div class="offcanvassMobile-inner">
+             <div class=" offcanvassMobile-header">
+            <img class="offcanvass-logo" src="images/saiii.png" alt="" height="
+            100px">
+            <img  onclick="closea()" src="images/close (1).png" alt="" height="
+     20px">
+     </div>
+<div class="offcanvassMobile-body">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas beatae sequi natus, inventore cupiditate odit aliquid similique repudiandae nobis? Odio ipsum enim quis perferendis hic expedita asperiores nihil blanditiis!</p>
+    <hr>
+    <div class=" address" >
+                   
+                        
+        <div class="col-12" >
+         <img src="images/time.png" alt="" height="20px">
+         <h6>Say Hello!</h6>
+         <span>SAICONSTRUCTIONNZ@GMAIL.COM</span>
+         <span>+1 022 108 5176</span>
+         <span>+1 022 344 7437</span>
+     </div>
+     <div class="col-12 mt-3 " >
+         <img src="images/location.png" alt="" height="20px">
+         <h6>Location</h6>
+         <span>1/79E Rangatira Road, beach haven, Auckland-0626</span>
+
+
+</div>
+
+
+
+
+</div>
+                                <div class="icon">
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                                </div>
+</div>
+
+</div>
+       
+                
+    </div>
