@@ -1,15 +1,3 @@
-// --------------START SCRIPT FOR NAVIGATION BAR----------------------------//
-            var nav=document.getElementById("nav");
-            var xhr=new XMLHttpRequest();
-            xhr.onreadystatechange=()=>{
-                if(xhr.readyState==4 && xhr.status==200){
-                    var data=xhr.responseText;
-                  nav.innerHTML=data;
-                }
-            }
-            xhr.open("GET","nav.html", true);
-            xhr.send();
-// --------------END SCRIPT FOR NAVIGATION BAR----------------------------//
 // --------------START SCRIPT FOR FOOTER SECTION ----------------------------//
 var footer=document.getElementById("footer");
 var xhrFooter=new XMLHttpRequest();
@@ -88,14 +76,14 @@ function setupHoverEffects(hoverAreaId, hoverImageId, offsetXPercent, offsetYPer
 }
 
 
-setupHoverEffects("hoverArea", "hoverImage", 40, 80); // 20% offsets
-setupHoverEffects("hoverArea1", "hoverImage1", 150, 80);
-setupHoverEffects("hoverArea2", "hoverImage2", 260, 80);
-setupHoverEffects("hoverArea3", "hoverImage3", 40, 190);
-setupHoverEffects("hoverArea4", "hoverImage4", 150, 190);
-setupHoverEffects("hoverArea5", "hoverImage5", 260, 190);
-setupHoverEffects("hoverArea6", "hoverImage6", 95, 300);
-setupHoverEffects("hoverArea7", "hoverImage7", 205, 300);
+setupHoverEffects("hoverArea", "hoverImage", 40, 66); // 20% offsets
+setupHoverEffects("hoverArea1", "hoverImage1", 150, 66);
+setupHoverEffects("hoverArea2", "hoverImage2", 260, 66);
+setupHoverEffects("hoverArea3", "hoverImage3", 40, 176);
+setupHoverEffects("hoverArea4", "hoverImage4", 150, 176);
+setupHoverEffects("hoverArea5", "hoverImage5", 260, 176);
+setupHoverEffects("hoverArea6", "hoverImage6", 95, 286);
+setupHoverEffects("hoverArea7", "hoverImage7", 205, 286);
 
 
 }
@@ -119,30 +107,39 @@ video.addEventListener("click", ()=>{
 });
 
 // --------------------------- offcanvas---------------------------//
-
+var abc = document.getElementById("abc");
+var boddy = document.getElementById("body");
 function bar(){
   const offcanvassId=document.getElementById("offcanvass-Id");
+  offcanvassId.style.left="0%";
+  offcanvassId.classList.add("offcanvassanimate");
+ 
+  abc.style.filter="blur(1px)";
 
-  offcanvassId.style.display="block";
+
  
 }
 function closea(){
   const offcanvassId=document.getElementById("offcanvass-Id");
+  var closea=document.querySelectorAll(".closea");
+  offcanvassId.style.left="-100%";
+  abc.style.filter="blur(0px)";
+  offcanvassId.classList.remove("offcanvassanimate");
 
-  offcanvassId.style.display="none";
+
 }
 
 
 function mobilebar(){
   const offcanvassId=document.getElementById("offcanvassMobile");
 
-  offcanvassId.style.display="block";
+  offcanvassId.style.right="0%";
 }
 
 function mobilebarClose(){
   const offcanvassId=document.getElementById("offcanvassMobile");
 
-  offcanvassId.style.display="none";
+  offcanvassId.style.right="-100%";
 }
 
 
