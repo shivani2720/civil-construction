@@ -1168,7 +1168,7 @@ textarea {
     align-items: center;
     color: var(--bg-white);
     position: absolute;
-    top: -60px;
+    top: -40px;
     right: 0;
     transition: 0.7s;
 
