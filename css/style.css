@@ -15,42 +15,47 @@ body {
     --bg-blue: #1b1b1b;
     --bg-white: #fff;
     --bg-border: #bbb;
-    --bg-black:#000;
-    --bg-parab:#000000ad;
-    --bg-spanb:#000000ce;
-    --bg-paraw:#ffffffc8;
-    --bg-spanw:#ffffffdd;
+    --bg-black: #000;
+    --bg-parab: #000000ad;
+    --bg-spanb: #000000ce;
+    --bg-paraw: #ffffffc8;
+    --bg-spanw: #ffffffdd;
 }
 
 
 
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
 
 }
-h2{
-    font-size: 22px;
+
+h2 {
+    font-size: 25px;
     color: var(--bg-black);
 }
-h3{
+
+h3 {
+    font-size: 23px;
+    color: var(--bg-black);
+}
+
+h6 {
     font-size: 20px;
-    color: var(--bg-black);
-}
-h6{
-    font-size: 18px;
     padding-left: 2.5em;
     color: var(--bg-black);
 
 
 }
+
 span {
-    font-size: 10px;
+    font-size: 14px;
     color: var(--bg-spanb);
 
 }
+
 p {
-    font-size: 11px;
+    font-size: 13px;
     color: var(--bg-parab);
     margin-bottom: 0;
 
@@ -107,7 +112,12 @@ p {
     align-items: center;
     justify-content: center;
 }
-.bar{
+
+.navs .logo img {
+    margin-left: 3em;
+}
+
+.bar {
     cursor: pointer;
 }
 
@@ -228,6 +238,7 @@ p {
     justify-content: center;
     color: var(--bg-white);
     z-index: 2;
+    padding: 0.5em 0em;
 }
 
 .nav-right::after {
@@ -244,9 +255,18 @@ p {
 
 }
 
-.navs .nav-right span {
-    font-size: 14px;
+.call {
+    margin-top: 0.4em;
+    color: var(--bg-paraw);
+    font-size: 12px;
 }
+
+.num {
+    color: var(--bg-paraw);
+    font-size: 11px;
+
+}
+
 
 
 /* ---------------------------START STYLING FOR SECTION FIRST------------ */
@@ -286,16 +306,21 @@ p {
 
 }
 
+.left-section p {
+    margin-bottom: 1em;
+}
 
 .left-section .text .header h6 {
     color: var(--bg-spanw);
 
 }
-.left-section .text  h1 {
+
+.left-section .text h1 {
     color: var(--bg-white);
 
 }
-.left-section .text  p {
+
+.left-section .text p {
     color: var(--bg-paraw);
 
 }
@@ -315,6 +340,7 @@ p {
     background-color: var(--bg-blue);
     border-radius: 2em;
     position: relative;
+    overflow: hidden;
 
 }
 
@@ -337,19 +363,18 @@ p {
     left: 0;
     bottom: 0;
     color: var(--bg-white);
-
+    height: 40%;
 
 
 
 }
 
-.inner-right-section .down {
+
+.round-img {
     display: flex;
-    align-items: center;
-
 }
 
-.inner-right-section .down .box1 {
+.inner-right-section .box1 {
     height: 55px;
     width: 55px;
     border-radius: 50%;
@@ -359,10 +384,27 @@ p {
 
 }
 
-.inner-right-section .down .box1 img {
+.inner-right-section .box1 img {
     border-radius: 50%;
 }
 
+.client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client h2 {
+    color: var(--bg-white);
+    font-size: 14px;
+    margin: 0.3em;
+}
+
+.client h3 {
+    color: var(--bg-paraw);
+    margin: 0;
+}
 
 .empty {
     padding: 1em 0.7em;
@@ -396,10 +438,12 @@ p {
     z-index: -2;
 
 }
-.empty .box h2{
+
+.empty .box h2 {
     color: var(--bg-white);
 }
-.empty .box p{
+
+.empty .box p {
     color: var(--bg-white);
 }
 
@@ -574,8 +618,10 @@ sub {
     margin: 1em;
 }
 
-.service-box h3,
-p {
+.service-box p {
+    pointer-events: none;
+}
+.service-box h3 {
     pointer-events: none;
 }
 
@@ -706,26 +752,63 @@ p {
     transform: scale(1.3);
 }
 
-.testmonial-arrow {
-    text-align: center;
+.testmonial-button {
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
 }
 
-.testmonial-arrow .custom-prev,
-.custom-next {
+.testmonial-arrow-prev {
     border: 1px solid var(--bg-border);
-    margin: 1em 0.3em;
-    border-radius: 2em;
-    padding: 0.3em;
-}
-
-.testmonial-arrow .custom-prev:hover {
-    transform: scale(1.2);
+    border-right: none;
+    margin-right: 0.6em;
+    padding: 0.2em 0em 0.2em 0.2em;
+    transition: all 0.5s;
     cursor: pointer;
 }
 
-.testmonial-arrow .custom-next:hover {
-    transform: scale(1.2);
+.testmonial-arrow-next {
+    border: 1px solid var(--bg-border);
+    border-left: none;
+    margin-left: 0.6em;
+    padding: 0.2em 0.2em 0.2em 0em;
+    transition: all 0.5s;
     cursor: pointer;
+
+}
+
+.testmonial-arrow-prev img {
+    transition: all 0.3s;
+
+}
+
+.testmonial-arrow-next img {
+    transition: all 0.3s;
+}
+
+.testmonial-arrow-next span {
+    color: black;
+    font-size: 11px;
+
+}
+
+.testmonial-arrow-prev span {
+    color: black;
+    font-size: 11px;
+
+}
+
+
+
+
+.testmonial-arrow-prev:hover img {
+    cursor: pointer;
+    transform: translateX(-3px);
+}
+
+.testmonial-arrow-next:hover img {
+    cursor: pointer;
+    transform: translateX(3px);
 }
 
 
@@ -798,9 +881,12 @@ p {
     align-items: center;
     padding: 3em 0em;
 }
-.contact-section  h2 ,h6{
+
+.contact-section h2,
+h6 {
     color: var(--bg-white);
 }
+
 .contact {
     padding-top: 4em;
 }
@@ -838,6 +924,7 @@ input {
 input,
 textarea {
     width: 100%;
+    padding-left: 0.4em;
     outline: none;
     background-color: transparent;
     border: 1px solid var(--bg-border);
@@ -858,27 +945,31 @@ textarea {
     border: 1px solid var(--bg-border);
     border-radius: 1em;
     padding: 3em 1em;
+    font-size: 14px;
 }
 
 
-.footer-container p{
+.footer-container p {
     color: var(--bg-paraw);
+    padding: 0.6em 0em;
 }
 
-.footer-container h3{
+.footer-container h3 {
     color: var(--bg-white);
 }
-.icon{
+
+.icon {
     margin-top: 1em;
 }
 
- .icon a {
+.icon a {
     color: var(--bg-paraw);
 }
 
- .icon i {
+.icon i {
     margin-right: 1em;
     transition: all 0.5s linear;
+    font-size: 17px;
 }
 
 .icon i:hover {
@@ -961,12 +1052,13 @@ textarea {
     padding: 0;
 }
 
- .address h6 {
+.address h6 {
     padding: 0;
 }
- .address span {
-color: var(--bg-spanw);
-display: block;
+
+.address span {
+    color: var(--bg-spanw);
+    display: block;
 }
 
 
@@ -1006,87 +1098,195 @@ display: block;
 }
 
 /* offcanvas style */
-.offcanvass{
+.offcanvass {
     height: 100vh;
     width: 50%;
-background-image: url(../images/mumbai-skyline-skyscrapers-construction_469504-21.avif);
-background-size: cover;
-background-repeat: no-repeat;
+    background-image: url(../images/mumbai-skyline-skyscrapers-construction_469504-21.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 999;
     position: fixed;
     top: 0;
-    display: none;
-    color: var(--bg-white);
+    left: -100%;
+    color: black;
+    /* overflow-y: scroll; */
+    transition: all 1s linear;
 
 }
-.offcanvass::after{
-content: '';
-position: absolute;
-top: 0;
-height: 100%;
-width: 100%;
-background-color: #1b1b1b88;
 
-z-index: -1;
+
+.offcanvass::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.53);
+
+    z-index: -1;
 }
-.offcanvass-inner{
+
+.offcanvass-inner {
     padding: 1em 1em 1em 2em;
 }
-.offcanvass-header{
+
+.offcanvass-header {
+    position: relative;
+}
+
+.offcanvass-header img {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+/* .offcanvass-body{
+    width: 600px;
+
+} */
+.offcanvass-body .offcanvass-logo {
+    margin: 1em 0em;
+}
+
+.offcanvass-body {
+    padding: 3em 1em;
+}
+
+.offcanvass-body .button {
+    position: relative;
+    padding: 0em 1em;
+
+}
+
+.offcanvass-body .button .offcanvass-btn {
+    height: 100px;
+    width: 100px;
+    background-color: var(--bg-blue);
+    border-radius: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-white);
+    position: absolute;
+    top: -60px;
+    right: 0;
+    transition: 0.7s;
+
 }
-.offcanvass-header img{
+
+.offcanvass-body h6 {
+    color: black;
+}
+
+.offcanvass-body span {
+    color: black;
+}
+
+.offcanvass-body .icon a {
+    color: black;
+}
+
+.offcanvassanimate {
+    animation: offcanvas-animate 2s ease-in-out;
+}
+
+@keyframes offcanvas-animate {
+    0% {
+        width: 70%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.offcanvass-body .button .offcanvass-btn:hover {
     cursor: pointer;
-}
-.offcanvass-header .offcanvass-logo{
-    margin-top: 2em;
-    cursor: pointer;
-}
-.offcanvass-body p{
-    color: var(--bg-paraw);
 }
 
 /* -----------offanvass for mobile ---------------- */
-.offcanvassMobile{
+.offcanvassMobile {
     height: 100vh;
-    width: 60%;
-background-image: url(../images/mumbai-skyline-skyscrapers-construction_469504-21.avif);
-background-size: cover;
-background-repeat: no-repeat;
+    width: 100%;
+    background-image: url(../images/mumbai-skyline-skyscrapers-construction_469504-21.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 999;
     position: fixed;
     top: 0;
-    right: 0;
-    display: none;
+    right: -100%;
     color: var(--bg-white);
+    transition: 1s;
 
 }
-.offcanvassMobile::after{
-content: '';
-position: absolute;
-top: 0;
-height: 100%;
-width: 100%;
-background-color: #1b1b1b88;
 
-z-index: -1;
+.offcanvassMobile::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.53);
+
+    z-index: -1;
 }
-.offcanvassMobile-inner{
-    padding: 2em 0.4em;
+
+.offcanvassMobile-inner {
+    padding: 2em;
 }
-.offcanvassMobile-header{
+
+.offcanvassMobile-header {
     display: flex;
     justify-content: space-between;
 }
-.offcanvassMobile-header img{
+
+.offcanvassMobile-header .mobileOffcanvasClose {
     cursor: pointer;
-}
-.offcanvassMobile-header .offcanvassMobile-logo{
-    margin-top: 2em;
-    cursor: pointer;
-}
-.offcanvassMobile-body p{
-    color: var(--bg-paraw);
 }
 
+.offcanvassMobile-body {
+    padding: 2em 0em;
+
+}
+.offcanvassMobile-body hr {
+color: black;
+height: 2px;
+}
+
+.offcanvassMobile-body ul {
+    padding-left: 0;
+    padding-bottom: 3em;
+}
+.offcanvassMobile-body ul li {
+    list-style: none;
+    line-height: 2.6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.offcanvassMobile-body ul li:hover {
+    cursor: pointer;
+    
+}
+
+.offcanvassMobile-body ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.offcanvassMobile-body .address {
+    padding: 0;
+}
+
+.offcanvassMobile-body .address span {
+    color: black;
+font-size: 14px;
+}
+
+.offcanvassMobile-body .address h6 {
+    color: #000;
+}
+.offcanvassMobile-body .icon a {
+    color: #000;
+}
