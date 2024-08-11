@@ -52,7 +52,13 @@
     .navs .nav-center {
         padding: 1em;
     }
+    .client{
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 30px;
     
+    }
 }
 
 /* ------------------------FOR SECTION FIRST----------------- */
