@@ -55,10 +55,7 @@
     .client{
         font-size: 10px;
     }
-    h1 {
-        font-size: 30px;
     
-    }
 }
 
 /* ------------------------FOR SECTION FIRST----------------- */
@@ -85,7 +82,7 @@
         font-size: 11px;    }
         
         h1 {
-            font-size: 40px;
+            font-size: 30px;
         
         }
         h2{
