@@ -29,83 +29,57 @@
     <!-- ------------------------ STYLE-SHEET ---------------------------------------->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-   
+
 </head>
 
-<body>
-    <!-- <div class="container-fluid" id="abc"> -->
-<!-- scroll button here --> 
- 
-<div class="scroll" >
-<img src="images/arrow (1).png" alt="" height="40px">
-</div>
+<body id="body">
+    <!-- --------offcanvas------------- -->
+    <div class="offcanvass " id="offcanvass-Id">
+        <div class="offcanvass-inner">
+            <div class=" offcanvass-header">
 
-<!-- end scroll button here -->
-    <div class="container-fluid" style="height: 80px; background-color: #1b1b1b65;"></div>
-    <!----------------------------START NAVIGATION BAR  ------------------------------------------->
-    <div id="nav"></div>
+                <img onclick="closea()" class="closea" src="images/close (2).png" alt="" height="
+     20px">
 
-    <!----------------------------START FIRST SECTION  ------------------------------------------->
-    <div class="container-fluid img-section" id="first">
-        <video height="650px" width="100%" autoplay muted loop style="object-fit: cover;">
-            <source src="images/first-section-image.mp4">
-        </video>
 
-        <div class="container  section-first">
-            <div class="row">
-                <div class="col-lg-6 col-12 left-section ">
-                    <div class=" col-12 text about1">
-                        <div class="header">
-                            <h6>welcome to sai construction</h6>
-                        </div>
-                        <h1>We building For A Better Feature</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime, quisquam quae culpa
-                            sunt
-                            facere magnam, corrupti quas ipsum sit aspernatur doloribus! Ducimus totam perspiciatis,
-                            et
-                            dolor consectetur cumque corrupti!</p>
+            </div>
+            <div class="offcanvass-body">
+                <img class="offcanvass-logo" src="images/offcanvas-logo.jpg.png" alt="" height="
+            60px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas beatae sequi natus, inventore
+                    cupiditate odit aliquid similique repudiandae nobis? Odio ipsum enim quis perferendis hic expedita
+                    asperiores nihil blanditiis!</p>
+                <hr>
+                <div class=" address">
 
-                        <button class="btns" style="color: white;">CONTACT US
-                            <img src="images/right-up (1).png" alt="" height="20px">
-                        </button>
+
+                    <div class="col-12">
+                        <img src="images/ofcanvas-time.png" alt="" height="20px">
+                        <h6>Say Hello!</h6>
+                        <span>SAICONSTRUCTIONNZ@GMAIL.COM</span>
+                        <span>+1 022 108 5176</span>
+                        <span>+1 022 344 7437</span>
                     </div>
+                    <div class="col-12 mt-3 ">
+                        <img src="images/offcanvas-location.png" alt="" height="20px">
+                        <h6>Location</h6>
+                        <span>1/79E Rangatira Road, beach haven, Auckland-0626</span>
+
+
+                    </div>
+
+
+
+
                 </div>
-                <div class="col-lg-6 col-12   right-section ">
-                    <div class="col-lg-10 col-sm-10 col-10 inner-right-section">
-                        <div class="col-12 up">
-                            <img src="images/pointing-sketch.jpg" alt="" height="100%" width="100%">
-                        </div>
-                        <div class="col-12 down">
-                            <div class="box1">
-                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                    width="100%">
-                            </div>
-                            <div class="box1">
-                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                    width="100%">
-                            </div>
-                            <div class="box1">
-                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                    width="100%">
-                            </div>
-                            <div class="box1">
-                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                    width="100%">
-                            </div>
-                            <div class="box1">
-                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                    width="100%">
-                            </div>
-                            <div class="box1">
-                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                    width="100%">
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+                <div class="col-12  button">
+                    <div class="offcanvass-btn">Chat US</div>
                 </div>
             </div>
 
@@ -114,381 +88,573 @@
 
     </div>
 
-    <div class="container-fluid empty">
-        <div class="box container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <h2>Best House Renovation</h2>
-                    <p>Constructor explains how you can enjoy hig end flooring trends like textured wood and
-                        realistic
-                        stones</p>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <h2>Best House Renovation</h2>
-                    <p>Constructor explains how you can enjoy hig end flooring trends like textured wood and
-                        realistic
-                        stones</p>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <h2>Best House Renovation</h2>
-                    <p>Constructor explains how you can enjoy hig end flooring trends like textured wood and
-                        realistic
-                        stones</p>
+
+    <!-- ----------offcanvas for mobile bar------------- -->
+    <div class="offcanvassMobile" id="offcanvassMobile">
+        <div class="offcanvassMobile-inner">
+            <div class=" offcanvassMobile-header">
+                <img class="offcanvassMobile-logo" src="images/offcanvas-logo.jpg.png" alt="" height="
+            60px">
+                <img class="mobileOffcanvasClose" onclick="mobilebarClose()" src="images/close (2).png" alt="" height="
+     20px">
+            </div>
+            <div class="offcanvassMobile-body">
+                <ul>
+                    <li>
+                        <div><a href="#first">HOME</a></div>
+                        <div><img src="images/down-arrow.png" alt="" height="20px"></div>
+                    </li>
+                    <li>
+                        <div><a href="#about">ABOUT </a></div>
+                        <div><img src="images/down-arrow.png" alt="" height="20px"></div>
+                    </li>
+                    <li>
+                        <div><a href="#service">SERVICES</a></div>
+                        <div><img src="images/down-arrow.png" alt="" height="20px"></div></li>
+                    <li>
+                        <div><a href="#contact">GALLERY</a></div>
+                        <div><img src="images/down-arrow.png" alt="" height="20px"></div></li>
+                    <li>
+                        <div><a href="#enquiry">ENQUIRY</a></div>
+                        <div><img src="images/down-arrow.png" alt="" height="20px"></div></li>
+                </ul>
+
+                <div class=" address">
+
+                    <div class="col-12 ">
+
+                        <hr>
+                        <h6 class="add">1/79E Rangatira Road, beach haven, Auckland-0626</h6>
+
+
+                    </div>
+
+                    <div class="col-12 mt-3">
+                        <img src="images/ofcanvas-time.png" alt="" height="20px">
+
+                        <span>saiconstructionnz.com</span>
+                        <span>+1 022 108 5176</span>
+                        <span>+1 022 344 7437</span>
+                    </div>
+
+
+
+
 
                 </div>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
             </div>
+
         </div>
+
+
     </div>
-    <!----------------------------END FIRST SECTION  ------------------------------------------->
+    <div class="container-fluid" id="abc" style="overflow: hidden;">
+
+        <!-- scroll button here -->
+        <div class="scroll">
+            <img src="images/arrow (1).png" alt="" height="40px">
+        </div>
+        <!-- end scroll button here -->
+        <div class="container-fluid" style="height: 80px; background-color: #1b1b1b65;"></div>
 
 
-    <!----------------------------START ABOUT US SECTION  ------------------------------------------->
+        <!----------------------------START NAVIGATION BAR  ------------------------------------------->
 
-    <div class="container-fluid about-section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6  ">
-                    <div class="img">
-                        <img src="images/civil-engineer-construction-worker-architects-wearing-hardhats-safety-vests-are-working-together-construction-site-building-home-cooperation-teamwork-concept.jpg"
-                            alt="" height="100%" width="100%">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6  ">
-                    <div class=" col-12 text about1">
-                        <div class="header">
-                            <h6>About Us</h6>
-                        </div>
-                        <h2>SAI CONSTRUCTION LTD.</h2>
-                        <p>KAPIL PRABHAKAR [ Qualified Builder- LBP] & BHAVIN GODHANI [ B.E.-Civil,
-                            B.Tech-Structure]
-                            has set up the firm with a strong ethos, which has acted as a robust foundation
-                            throughout
-                            the journey. </p>
-
-                    </div>
-                </div>
+        <div class="container-fluid navs">
+            <div class=" col-xl-1 col-md-1  nav-left  ">
+                <img class="bar" id="bar" onclick="bar()" src="images/menu-bar.png" alt="bar-icon" height="25px">
             </div>
 
-            <!-- 25th year----- -->
-            <div class="year  col-12  ">
-                <div class="col-lg-9   left ">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6  img">
-                            <img src="images/pointing-sketch.jpg" alt="" height="100%" width="100%">
-                        </div>
-                        <div class="col-lg-6 col-md-6 abc2 about1">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="year-left col-lg-6 ">
-                                        <span class="year-num">25 <sub>+year</sub></span>
-                                    </div>
-                                    <div class="col-lg-6  year-right">
-                                        <p>Lorem ipsum doloigendi perferendis nihil, vitae earum!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="year-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime, quisquam
-                                    quae
-                                    culpa
-                                    sunt
-                                    facere magnam, corrupti quas ipsum sit aspernatur doloribus! Ducimus totam
-                                    perspiciatis, et
-                                    dolor consectetur cumque corrupti!</p>
-                            </div>
+            <div class="  col-xl-1 col-md-1 col-sm-2 col-3 logo ">
+                <img src="images/Instagram_black-removebg-preview.png" alt="" height="60px">
+            </div>
 
-                            <button class="btns" style="color:black;">MORE ABOUT
+            <div class=" col-xl-8  col-md-8 col-sm-10 col-9 nav-center  ">
+
+                <ul>
+                    <li><a href="#first">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#service">SERVICES</a></li>
+                    <li><a href="#contact">GALLERY</a></li>
+                    <li><a href="#enquiry">ENQUIRY</a></li>
+                </ul>
+                <img class="mobile-bar" onclick="mobilebar()" src="images/menu-bar.png" alt="bar-icon" height="25px">
+            </div>
+
+            <div class="col-xl-2 col-md-2  nav-right">
+                <span><img src="images/old-typical-phone.png" alt="" height="20px"></span>
+                <span class="call">CALL US NOW</span>
+                <span class="num">9877655432</span>
+            </div>
+
+        </div>
+
+
+
+
+        <!----------------------------START FIRST SECTION  ------------------------------------------->
+        <div class="container-fluid img-section" id="first">
+            <video height="650px" width="100%" autoplay muted loop style="object-fit: cover;">
+                <source src="images/first-section-image.mp4">
+            </video>
+
+            <div class="container  section-first">
+                <div class="row">
+                    <div class="col-lg-6 col-12 left-section ">
+                        <div class=" col-12 text about1">
+                            <div class="header">
+                                <h6>welcome to sai construction</h6>
+                            </div>
+                            <h1>We building For A Better Feature</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime, quisquam quae culpa
+                                sunt
+                                facere magnam, corrupti quas ipsum sit aspernatur doloribus! Ducimus totam perspiciatis,
+                                et
+                                dolor consectetur cumque corrupti!</p>
+
+                            <button class="btns" style="color: white;">CONTACT US
                                 <img src="images/right-up (1).png" alt="" height="20px">
                             </button>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!----------------------------END ABOUT US SECTION  ------------------------------------------->
-
-
-    <!----------------------------IMAGE SECTION   ------------------------------------------->
-
-    <div class="container-fluid civil-img">
-    </div>
-
-    <!----------------------------START SERVICE  SECTION   ------------------------------------------->
-    <div class="container-fluid service-section" id="service">
-        <div class="container service">
-            <div class=" col-lg-7  col-12 text  about1">
-                <div class="header">
-                    <h6>Our Services</h6>
-                </div>
-                <h2>WHAT WE DO FOR YOU</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime, quisquam quae culpa
-                    sunt
-                    facere magnam, corrupti quas ipsum sit aspernatur doloribus! Ducimus totam perspiciatis, et
-                    dolor consectetur cumque corrupti!</p>
-            </div>
-        </div>
-        <div class="container  second-service">
-            <div class="row">
-                <div class="col-lg-3 col-md-5  service-box" id="hoverArea">
-                    <img src="images/foundation.png" alt="">
-
-                    <h3>FOUNDATION</h3>
-                    <p>Design and Building the Most Beautiful Custom Home</p>
-                </div>
-                <img id="hoverImage" class="hover-image" src="images/service1.jpg" alt="image here">
-
-                <div class="col-lg-3 col-md-5 service-box" id="hoverArea1">
-                    <img src="images/framming.png" alt="">
-                    <h3>FRAMMING</h3>
-                    <p>Design and Building the Most Beautiful Custom Home</p>
-                    
-                </div>
-                <img id="hoverImage1" class="hover-image" src="images/service2.jpg" alt="image here">
-
-                <div class="col-lg-3 col-md-5  service-box" id="hoverArea2">
-                    <img src="images/lift.png" alt="">
-                    <h3>CLADDING</h3>
-                    <p>Design and Building the Most Beautiful Custom Home</p>
-                    
-                </div>
-                <img id="hoverImage2" class="hover-image" src="images/service3.jpg" alt="image here">
+                    <div class="col-lg-6 col-12   right-section ">
+                        <div class="col-lg-10 col-sm-10 col-10 inner-right-section">
+                            <div class="col-12 up">
+                                <img src="images/pointing-sketch.jpg" alt="" height="100%" width="100%">
+                            </div>
+                            <div class="col-12 down ">
+                                <div class="row">
+                                    <div class="col-7 round-img ">
+                                        <div class="box1">
+                                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt=""
+                                                height="100%" width="100%">
+                                        </div>
+                                        <div class="box1">
+                                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt=""
+                                                height="100%" width="100%">
+                                        </div>
+                                        <div class="box1">
+                                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt=""
+                                                height="100%" width="100%">
+                                        </div>
+                                        <div class="box1">
+                                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt=""
+                                                height="100%" width="100%">
+                                        </div>
+                                        <div class="box1">
+                                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt=""
+                                                height="100%" width="100%">
+                                        </div>
 
 
-                <div class="col-lg-3 col-md-5 service-box" id="hoverArea3">
-                    <img src="images/lift.png" alt="">
-                    <h3>DECKING AND FENCING</h3>
-                    <p>Design and Building the Most Beautiful Custom Home</p>
-                    
-                </div>
-                <img id="hoverImage3" class="hover-image" src="images/service4.jpg" alt="image here">
-                <div class="col-lg-3 col-md-5 service-box" id="hoverArea4">
-                    <img src="images/retaining-wall.png" alt="">
-                    <h3>RETAINING WALL</h3>
-                    <p>Design and Building the Most Beautiful Custom Home</p>
-                    
-                    
-                    
-                </div>
-                <img id="hoverImage4" class="hover-image" src="images/service5.jpg" alt="image here">
 
-                <div class="col-lg-3 col-md-5  service-box" id="hoverArea5">
-                    <img src="images/pergola.png" alt="">
-                    <h3>PERGOLA</h3>
-                    <p>Design and Building the Most Beautiful Custom Home</p>
-                    
-                </div>
-                <img id="hoverImage5" class="hover-image" src="images/service6.jpg" alt="image here">
-                
-                <div class="col-lg-3 col-md-5   service-box" id="hoverArea6">
-                    <img src="images/lift.png" alt="">
-                    <h3>DRIVE WAY</h3>
-                    <p>Design and Building the Most Beautiful Custom Home</p>
-                    
-                </div>
-                <img id="hoverImage6" class="hover-image" src="images/service7.jpeg" alt="image here">
-                <div class="col-lg-3  col-md-5   service-box" id="hoverArea7">
-                    <img src="images/lift.png" alt="">
-                    <h3>COUNCIL INSPECTION</h3>
-                    <p>Design and Building the Most Beautiful Custom Home</p>
-                    
-                </div>
-                <img id="hoverImage7" class="hover-image" src="images/service8.png" alt="image here">
-
-            </div>
-        </div>
-    </div>
-
-    <!----------------------------END SERVICE  SECTION   ------------------------------------------->
-
-    <!----------------------------IMAGE SECTION   ------------------------------------------->
-
-    <div class="container-fluid civil-img">
-    </div>
-    <!----------------------------START CLIENT  SECTION   ------------------------------------------->
+                                    </div>
+                                    <div class="col-5 client">
+                                        <h2>Happy Client</h2>
+                                        <h3>5.5K</h3>
+                                    </div>
+                                </div>
+                            </div>
 
 
-    <div class="container-fluid client-section">
-        <div class="container service ">
-            <div class=" col-lg-7  col-12 text  about1">
-                <div class="header">
-                    <h6>Testmonials</h6>
-                </div>
-                <h2>What Client Say</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime, quisquam quae culpa
-                    sunt
-                    facere magnam, corrupti quas ipsum sit aspernatur doloribus! Ducimus totam perspiciatis, et
-                    dolor consectetur cumque corrupti!</p>
-            </div>
-        </div>
-
-        <!-- testmonial section here -->
-        <div class="container  testmonial">
-            <div class="col-xxl-12 col-xl-9 col-11 carousel ">
-                <div class="owl-carousel owl-theme">
-                    <div class="item ">
-                        <div class="img">
-                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                width="100%">
                         </div>
+                    </div>
+                </div>
 
-                        <h6>PERSONAL NAME</h6>
-                        <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Atste, facilis animi repellat quidem
-                            omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+            </div>
+
+
+        </div>
+
+        <div class="container-fluid empty">
+            <div class="box container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <h2>Best House Renovation</h2>
+                        <p>Constructor explains how you can enjoy hig end flooring trends like textured wood and
+                            realistic
+                            stones</p>
                     </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" height="100%" width="100%">
-                        </div>
-                        <h6>PERSONAL NAME</h6>
-                        <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Atste, facilis animi repellat quidem
-                            omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+                    <div class="col-md-4 col-lg-4">
+                        <h2>Best House Renovation</h2>
+                        <p>Constructor explains how you can enjoy hig end flooring trends like textured wood and
+                            realistic
+                            stones</p>
                     </div>
-                    <div class="item">
+                    <div class="col-md-4 col-lg-4">
+                        <h2>Best House Renovation</h2>
+                        <p>Constructor explains how you can enjoy hig end flooring trends like textured wood and
+                            realistic
+                            stones</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------END FIRST SECTION  ------------------------------------------->
+
+
+        <!----------------------------START ABOUT US SECTION  ------------------------------------------->
+
+        <div class="container-fluid about-section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6  ">
                         <div class="img">
                             <img src="images/civil-engineer-construction-worker-architects-wearing-hardhats-safety-vests-are-working-together-construction-site-building-home-cooperation-teamwork-concept.jpg"
                                 alt="" height="100%" width="100%">
                         </div>
-                        <h6>PERSONAL NAME</h6>
-                        <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Atste, facilis animi repellat quidem
-                            omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
                     </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/anthony-fomin-sTw2KYpoujk-unsplash.jpg" alt="" height="100%" width="100%">
+                    <div class="col-md-6 col-lg-6  ">
+                        <div class=" col-12 text about1">
+                            <div class="header">
+                                <h6>About Us</h6>
+                            </div>
+                            <h2>SAI CONSTRUCTION LTD.</h2>
+                            <p>KAPIL PRABHAKAR [ Qualified Builder- LBP] & BHAVIN GODHANI [ B.E.-Civil,
+                                B.Tech-Structure]
+                                has set up the firm with a strong ethos, which has acted as a robust foundation
+                                throughout
+                                the journey. </p>
+
                         </div>
-                        <h6>PERSONAL NAME</h6>
-                        <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Atste, facilis animi repellat quidem
-                            omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
                     </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                width="100%">
+                </div>
+
+                <!-- 25th year----- -->
+                <div class="year  col-12  ">
+                    <div class="col-lg-9   left ">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6  img">
+                                <img src="images/pointing-sketch.jpg" alt="" height="100%" width="100%">
+                            </div>
+                            <div class="col-lg-6 col-md-6 abc2 about1">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="year-left col-lg-6 ">
+                                            <span class="year-num">25 <sub>+year</sub></span>
+                                        </div>
+                                        <div class="col-lg-6  year-right">
+                                            <p>Lorem ipsum doloigendi perferendis nihil, vitae earum!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="year-content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime, quisquam
+                                        quae
+                                        culpa
+                                        sunt
+                                        facere magnam, corrupti quas ipsum sit aspernatur doloribus! Ducimus totam
+                                        perspiciatis, et
+                                        dolor consectetur cumque corrupti!</p>
+                                </div>
+
+                                <button class="btns" style="color:black;">MORE ABOUT
+                                    <img src="images/right-up (1).png" alt="" height="20px">
+                                </button>
+                            </div>
                         </div>
-                        <h6>PERSONAL NAME</h6>
-                        <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Atste, facilis animi repellat quidem
-                            omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/pointing-sketch.jpg" alt="" height="100%" width="100%">
-                        </div>
-                        <h6>PERSONAL NAME</h6>
-                        <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Atste, facilis animi repellat quidem
-                            omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                width="100%">
-                        </div>
-                        <h6>PERSONAL NAME</h6>
-                        <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Atste, facilis animi repellat quidem
-                            omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
-                    </div>
-                    <div class="item">
-                        <div class="img">
-                            <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
-                                width="100%">
-                        </div>
-                        <h6>PERSONAL NAME</h6>
-                        <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Atste, facilis animi repellat quidem
-                            omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
                     </div>
 
                 </div>
-                <div class="testmonial-arrow">
-                    <img class="custom-prev" src="images/left-arrow-angle (1).png" alt="" height="30px">
-                    <img class="custom-next" src="images/right-arrow-angle.png" alt="" height="30px">
-                </div>
-
             </div>
         </div>
-    </div>
+        <!----------------------------END ABOUT US SECTION  ------------------------------------------->
 
 
+        <!----------------------------IMAGE SECTION   ------------------------------------------->
 
+        <div class="container-fluid civil-img">
+        </div>
 
-
-    <!----------------------------END CLIENT  SECTION   ------------------------------------------->
-
-
-    <!----------------------------START VIDEO  SECTION   ------------------------------------------->
-    <div class="container-fluid  video">
-        <video src="images/4935506_Person_People_1280x720.mp4" autoplay loop id="video"></video>
-        <img id="videobtn" src="images/play (1).png" alt="">
-    </div>
-    <!----------------------------END VIDEO  SECTION   ------------------------------------------->
-
-
-    <div class="container-fluid contact-section" id="contact">
-        <div class="container service">
-
-            <div class="row">
-
-
-                <div class=" col-lg-6   col-sm-6 text  about1">
+        <!----------------------------START SERVICE  SECTION   ------------------------------------------->
+        <div class="container-fluid service-section" id="service">
+            <div class="container service">
+                <div class=" col-lg-7  col-12 text  about1">
                     <div class="header">
-                        <h6>Contact</h6>
+                        <h6>Our Services</h6>
                     </div>
-                    <h2>Let’s start the productive work.</h2>
-
-                    <div class="col-12  form ">
-                        <form action="">
-                            <div class=" form-group">
-                                <label for="name">Name</label>
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class=" form-group ">
-                                <label for="name">Email</label>
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Message</label>
-                                <textarea name="" id="" rows="5"></textarea>
-                            </div>
-    
-                            <button class="btns" style="margin-top: 1em;">MORE ABOUT
-                                <img src="images/right-up (1).png" alt="" height="20px">
-                            </button>
-                        </form>
-                    </div>
-
-                </div>
-                <div class=" col-lg-6  col-sm-6 text  about1">
-                    <!-- <h2>Locate US</h2> -->
-                    <div class="col-lg-12 col-sm-12  map1">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28328.989959455448!2d174.69637085376237!3d-36.80658103958418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d38c585630e75%3A0xeb88848836efc568!2s1%2F79E%20Rangatira%20Road%2C%20Beach%20Haven%2C%20Auckland%200626%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1723220910030!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h2>WHAT WE DO FOR YOU</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime, quisquam quae culpa
+                        sunt
+                        facere magnam, corrupti quas ipsum sit aspernatur doloribus! Ducimus totam perspiciatis, et
+                        dolor consectetur cumque corrupti!</p>
                 </div>
             </div>
+            <div class="container  second-service">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5  service-box" id="hoverArea">
+                        <img src="images/foundation.png" alt="">
 
-                
+                        <h3>FOUNDATION</h3>
+                        <p>Design and Building the Most Beautiful Custom Home</p>
+                    </div>
+                    <img id="hoverImage" class="hover-image" src="images/service1.jpg" alt="image here">
+
+                    <div class="col-lg-3 col-md-5 service-box" id="hoverArea1">
+                        <img src="images/framming.png" alt="">
+                        <h3>FRAMMING</h3>
+                        <p>Design and Building the Most Beautiful Custom Home</p>
+
+                    </div>
+                    <img id="hoverImage1" class="hover-image" src="images/service2.jpg" alt="image here">
+
+                    <div class="col-lg-3 col-md-5  service-box" id="hoverArea2">
+                        <img src="images/lift.png" alt="">
+                        <h3>CLADDING</h3>
+                        <p>Design and Building the Most Beautiful Custom Home</p>
+
+                    </div>
+                    <img id="hoverImage2" class="hover-image" src="images/service3.jpg" alt="image here">
 
 
+                    <div class="col-lg-3 col-md-5 service-box" id="hoverArea3">
+                        <img src="images/lift.png" alt="">
+                        <h3>DECKING AND FENCING</h3>
+                        <p>Design and Building the Most Beautiful Custom Home</p>
+
+                    </div>
+                    <img id="hoverImage3" class="hover-image" src="images/service4.jpg" alt="image here">
+                    <div class="col-lg-3 col-md-5 service-box" id="hoverArea4">
+                        <img src="images/retaining-wall.png" alt="">
+                        <h3>RETAINING WALL</h3>
+                        <p>Design and Building the Most Beautiful Custom Home</p>
+
+
+
+                    </div>
+                    <img id="hoverImage4" class="hover-image" src="images/service5.jpg" alt="image here">
+
+                    <div class="col-lg-3 col-md-5  service-box" id="hoverArea5">
+                        <img src="images/pergola.png" alt="">
+                        <h3>PERGOLA</h3>
+                        <p>Design and Building the Most Beautiful Custom Home</p>
+
+                    </div>
+                    <img id="hoverImage5" class="hover-image" src="images/service6.jpg" alt="image here">
+
+                    <div class="col-lg-3 col-md-5   service-box" id="hoverArea6">
+                        <img src="images/lift.png" alt="">
+                        <h3>DRIVE WAY</h3>
+                        <p>Design and Building the Most Beautiful Custom Home</p>
+
+                    </div>
+                    <img id="hoverImage6" class="hover-image" src="images/service7.jpeg" alt="image here">
+                    <div class="col-lg-3  col-md-5   service-box" id="hoverArea7">
+                        <img src="images/lift.png" alt="">
+                        <h3>COUNCIL INSPECTION</h3>
+                        <p>Design and Building the Most Beautiful Custom Home</p>
+
+                    </div>
+                    <img id="hoverImage7" class="hover-image" src="images/service8.png" alt="image here">
+
+                </div>
             </div>
         </div>
-    
 
-    <!----------------------------START footer section  ------------------------------------------->
-    <div id="footer"></div>
-</div>
-    <!----------------------------end footer section  ------------------------------------------->
+        <!----------------------------END SERVICE  SECTION   ------------------------------------------->
 
-    <!----------------------------JAVASCRIPT FILE LINKS  ------------------------------------------->
+        <!----------------------------IMAGE SECTION   ------------------------------------------->
 
-
+        <div class="container-fluid civil-img">
+        </div>
+        <!----------------------------START CLIENT  SECTION   ------------------------------------------->
 
 
+        <div class="container-fluid client-section">
+            <div class="container service ">
+                <div class=" col-lg-7  col-12 text  about1">
+                    <div class="header">
+                        <h6>Testmonials</h6>
+                    </div>
+                    <h2>What Client Say</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime, quisquam quae culpa
+                        sunt
+                        facere magnam, corrupti quas ipsum sit aspernatur doloribus! Ducimus totam perspiciatis, et
+                        dolor consectetur cumque corrupti!</p>
+                </div>
+            </div>
+
+            <!-- testmonial section here -->
+            <div class="container  testmonial">
+                <div class="col-xxl-12 col-xl-9 col-11 carousel ">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item ">
+                            <div class="img">
+                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
+                                    width="100%">
+                            </div>
+
+                            <h6>PERSONAL NAME</h6>
+                            <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atste, facilis animi repellat quidem
+                                omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" height="100%" width="100%">
+                            </div>
+                            <h6>PERSONAL NAME</h6>
+                            <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atste, facilis animi repellat quidem
+                                omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="images/civil-engineer-construction-worker-architects-wearing-hardhats-safety-vests-are-working-together-construction-site-building-home-cooperation-teamwork-concept.jpg"
+                                    alt="" height="100%" width="100%">
+                            </div>
+                            <h6>PERSONAL NAME</h6>
+                            <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atste, facilis animi repellat quidem
+                                omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="images/anthony-fomin-sTw2KYpoujk-unsplash.jpg" alt="" height="100%"
+                                    width="100%">
+                            </div>
+                            <h6>PERSONAL NAME</h6>
+                            <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atste, facilis animi repellat quidem
+                                omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
+                                    width="100%">
+                            </div>
+                            <h6>PERSONAL NAME</h6>
+                            <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atste, facilis animi repellat quidem
+                                omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="images/pointing-sketch.jpg" alt="" height="100%" width="100%">
+                            </div>
+                            <h6>PERSONAL NAME</h6>
+                            <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atste, facilis animi repellat quidem
+                                omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
+                                    width="100%">
+                            </div>
+                            <h6>PERSONAL NAME</h6>
+                            <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atste, facilis animi repellat quidem
+                                omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="images/thisisengineering-ntZM993INp0-unsplash.jpg" alt="" height="100%"
+                                    width="100%">
+                            </div>
+                            <h6>PERSONAL NAME</h6>
+                            <p><b style="font-size: 18px;">"</b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Atste, facilis animi repellat quidem
+                                omnis voluptatum sed reprehenderit deserunt.<b style="font-size: 18px;">"</b></p>
+                        </div>
+
+                    </div>
+
+                    <div class="testmonial-button">
+                        <div class="testmonial-arrow-prev pointer custom-prev">
+                            <img src="images/left-arrow-angle (1).png" alt="" height="20px">
+                            <span>Prev</span>
+                        </div>
+                        <div class="testmonial-arrow-next pointer custom-next">
+                            <span>Next</span>
+                            <img src="images/right-arrow-angle.png" alt="" height="20px">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!----------------------------END CLIENT  SECTION   ------------------------------------------->
+
+
+        <!----------------------------START VIDEO  SECTION   ------------------------------------------->
+        <div class="container-fluid  video">
+            <video src="images/4935506_Person_People_1280x720.mp4" autoplay loop id="video"></video>
+            <img id="videobtn" src="images/play (1).png" alt="">
+        </div>
+        <!----------------------------END VIDEO  SECTION   ------------------------------------------->
+
+
+        <div class="container-fluid contact-section" id="contact">
+            <div class="container service">
+
+                <div class="row">
+
+
+                    <div class=" col-lg-6   col-sm-6 text  about1">
+                        <div class="header">
+                            <h6>Contact</h6>
+                        </div>
+                        <h2>Let’s start the productive work.</h2>
+
+                        <div class="col-12  form ">
+                            <form action="">
+                                <div class=" form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class=" form-group ">
+                                    <label for="name">Email</label>
+                                    <input type="text" name="" id="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Message</label>
+                                    <textarea name="" id="" rows="5"></textarea>
+                                </div>
+
+                                <button class="btns" style="margin-top: 1em;">SEND MESSAGE
+                                    <img src="images/right-up (1).png" alt="" height="20px">
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class=" col-lg-6  col-sm-6 text  about1">
+                        <!-- <h2>Locate US</h2> -->
+                        <div class="col-lg-12 col-sm-12  map1">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28328.989959455448!2d174.69637085376237!3d-36.80658103958418!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d38c585630e75%3A0xeb88848836efc568!2s1%2F79E%20Rangatira%20Road%2C%20Beach%20Haven%2C%20Auckland%200626%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1723220910030!5m2!1sen!2sin"
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+            <!----------------------------START footer section  ------------------------------------------->
+            <div id="footer"></div>
+        </div>
+        <!----------------------------end footer section  ------------------------------------------->
+
+        <!----------------------------JAVASCRIPT FILE LINKS  ------------------------------------------->
 
 
 
@@ -505,44 +671,48 @@
 
 
 
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
-    <script>
 
-        $(document).ready(function () {
-            var owl = $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 20,
-                nav: false, // Disable default nav controls
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
+
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+        <script>
+
+            $(document).ready(function () {
+                var owl = $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 20,
+                    nav: false, // Disable default nav controls
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
                     }
-                }
+                });
+
+                // Custom Navigation Events
+                $('.custom-next').click(function () {
+                    owl.trigger('next.owl.carousel');
+                });
+
+                $('.custom-prev').click(function () {
+                    owl.trigger('prev.owl.carousel');
+                });
             });
 
-            // Custom Navigation Events
-            $('.custom-next').click(function () {
-                owl.trigger('next.owl.carousel');
-            });
+        </script>
 
-            $('.custom-prev').click(function () {
-                owl.trigger('prev.owl.carousel');
-            });
-        });
-
-    </script>
-
-    <!-- </div> -->
+    </div>
 </body>
 
 </html>
